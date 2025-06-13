@@ -3,41 +3,104 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Exhibit001 Video</title>
+  <title>Behind the Scenes | Exhibit001</title>
+  <link rel="canonical" href="https://exhibit001.it.com/" />
+
+  <!-- ✅ SEO Meta -->
+  <meta name="description" content="Explore behind the scenes of Exhibit001 — from graffiti videos to garment construction, studio work, and photo documentation." />
+  <meta name="keywords" content="Exhibit001, behind the scenes, streetwear videos, fashion work, handmade clothing, bts fashion, graffiti, NYC fashion" />
+  <meta name="author" content="Exhibit001" />
+
+  <!-- ✅ Open Graph -->
+  <meta property="og:title" content="Behind the Scenes | Exhibit001" />
+  <meta property="og:description" content="Uncover the process behind Exhibit001. Watch raw footage, view studio work, and follow the evolution of handmade pieces." />
+  <meta property="og:image" content="https://exhibit001.com/cover.jpg" />
+  <meta property="og:url" content="https://exhibit001.it.com" />
+  <meta property="og:type" content="website" />
+
+  <!-- ✅ Schema Markup -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "Exhibit001",
+    "url": "https://exhibit001.it.com",
+    "description": "A central archive of behind-the-scenes media from Exhibit001 — including graffiti videos, fashion process, and studio documentation.",
+    "publisher": {
+      "@type": "Organization",
+      "name": "Exhibit001"
+    },
+    "sameAs": [
+      "https://exhibit001.video",
+      "https://exhibit001.fashion",
+      "https://exhibit001.work",
+      "https://exhibit001.photos"
+    ]
+  }
+  </script>
+
+  <!-- Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Acme&display=swap" rel="stylesheet">
+
   <style>
-    /* Full-page black background */
-    body {
+    html, body {
       margin: 0;
-      background-color: black;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
-      font-family: Arial, sans-serif;
-    }
-    /* Styled button */
-    .watch-button {
-      display: inline-block;
-      padding: 20px 20px; /* Adjust these values for a perfect square */
-      border: 4px solid white;
+      padding: 0;
+      height: 100%;
+      width: 100%;
+      background: black;
+      font-family: 'Acme', sans-serif;
       color: white;
-      font-size: 18px;
-      text-decoration: none;
-      text-transform: uppercase;
-      box-sizing: border-box;
-      width: 200px;
-      height: 200px;
-      line-height: 160px; /* Adjust so the text is centered vertically */
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
       text-align: center;
-      transition: background-color 0.3s;
-      cursor: pointer;
     }
-    .watch-button:hover {
-      background-color: rgba(255, 255, 255, 0.1);
+
+    h1 {
+      font-size: 32px;
+      margin-bottom: 40px;
+    }
+
+    .bts-buttons {
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+      width: 100%;
+      max-width: 340px;
+    }
+
+    .bts-buttons a {
+      background: transparent;
+      color: white;
+      border: 2px solid white;
+      padding: 16px 24px;
+      font-size: 20px;
+      border-radius: 16px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: all 0.3s ease;
+    }
+
+    .bts-buttons a:hover {
+      background: rgba(255, 255, 255, 0.1);
+      transform: scale(1.03);
+    }
+
+    @media (min-width: 600px) {
+      h1 { font-size: 48px; }
+      .bts-buttons a { font-size: 24px; }
     }
   </style>
 </head>
 <body>
-  <a href="#" class="watch-button">CLICK TO WATCH</a>
+  <h1>Behind the Scenes</h1>
+  <div class="bts-buttons">
+    <a href="https://exhibit001.video" target="_blank" rel="noopener">📹 Videos</a>
+    <a href="https://exhibit001.fashion" target="_blank" rel="noopener">🧵 Fashion</a>
+    <a href="https://exhibit001.work" target="_blank" rel="noopener">🎨 Work</a>
+    <a href="https://exhibit001.photos" target="_blank" rel="noopener">📸 Photos</a>
+  </div>
 </body>
 </html>
